@@ -1,8 +1,8 @@
 @import "rouge-base16-dark";
 @import "default_colors";
 
-$body-background: #131516f0;
-$body-foreground: #eaeaea;
+$body-background: $cod-grey !default;
+$body-foreground: $gallery !default;
 $theme-color-foreground: rgba(181, 232, 83, 0.1);
 $theme-color-background: rgba(0, 0, 0, 0.1);
 $blockquote-color: $silver-chalice !default;
