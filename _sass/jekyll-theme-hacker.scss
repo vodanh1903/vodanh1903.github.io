@@ -3,6 +3,7 @@
 
 $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
+$header: $conifer !default;
 // $theme-color-foreground: rgba(181, 232, 83, 0.1);
 // $theme-color-background: rgba(0, 0, 0, 0.1);
 $blockquote-color: $silver-chalice !default;
@@ -58,7 +59,7 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 1px dashed $theme-color-foreground;
+  border-bottom: 1px dashed $conifer;
   padding: 10px 0 0 0;
   margin: 0 0 40px 0;
 }
@@ -69,7 +70,7 @@ header h1 {
   margin: 0 0 0 -40px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $theme-color-foreground;
+  color: $conifer;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
@@ -114,7 +115,7 @@ section img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $theme-color-foreground;
+  color: $header;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
@@ -122,8 +123,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main_content h1 {
-  background: $theme-color-background;
-  border: 1px solid $theme-color-foreground;
   font-size: 30px;
 }
 
@@ -151,8 +150,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main_content h1,h2,h3,h4,h5,h6 {
-  background: $theme-color-background;
-  border: 1px solid $theme-color-foreground;
+  border: 1px solid $conifer;
   border-radius: $theme-border-radius;
   padding-left: 10px;
 }
@@ -192,7 +190,7 @@ ul li {
 
 ul > li::before {
   content: "> ";
-  color: $theme-color-foreground;
+  color: $conifer;
   font-weight: bolder;
 }
 
@@ -201,14 +199,14 @@ ol > li {
 }
 
 ol > li::marker {
-  color: $theme-color-foreground;
+  color: $conifer;
   font-weight: bolder;
 }
 
 blockquote {
   color: $blockquote-color;
   padding-left: 10px;
-  border-left: 1px dotted $theme-color-foreground;
+  border-left: 1px dotted $conifer;
 }
 
 /* Ruby Rouge syntax highlighter style  */
@@ -221,7 +219,7 @@ pre {
 }
 
 pre.highlight {
-  border: 1px solid $theme-border-color;
+  border: 1px solid $conifer;
   border-radius: $theme-border-radius;
 
   padding: 10px;
@@ -237,10 +235,10 @@ pre.highlight {
 
 code.highlighter-rouge {
   background: rgba(0,0,0,0.9);
-  border: 1px solid $theme-border-color;
+  border: 1px solid $conifer;
   padding: 0px 3px;
   margin: 0px -3px;
-  color: $theme-color-foreground;
+  color: $conifer;
   border-radius: $theme-border-radius;
 }
 
@@ -256,7 +254,7 @@ table.rouge-table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed $theme-color-foreground;
+  border-bottom: 1px dashed $conifer;
   padding: 5px 10px;
   width: 10%;
 }
@@ -267,7 +265,7 @@ td {
 
 td.rouge-gutter {
   text-align: right;
-  border-right: 1px solid $theme-border-color;
+  border-right: 1px solid $conifer;
 }
 
 /* ignore syntax error */
@@ -279,7 +277,7 @@ td.rouge-gutter {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed $theme-color-foreground;
+  border-bottom: 1px dashed $conifer;
   color: #b5e853;
 }
 
@@ -368,7 +366,7 @@ a {
 footer {
   background-color: $body-background;
   width: 100%;
-  border-bottom: 1px dashed $theme-color-foreground;
+  border-bottom: 1px dashed $conifer;
   padding-top: 30px;
 }
 
@@ -380,8 +378,8 @@ footer {
 } */
 
 details {
-  border: 1px dashed $theme-color-foreground;
-  background: $theme-color-background;
+  border: 1px dashed $conifer;
+  background: $body-background;
   border-radius: $theme-border-radius;
   margin-bottom: 20px;
 }
@@ -399,7 +397,7 @@ summary::-webkit-details-marker {display: none; }
 details summary::before { 
   content:"+ ";
   padding-left: 5px;
-  color: $theme-color-foreground;
+  color: $conifer;
   font-size: 1.5em;
   font-weight: bolder;
 }
@@ -407,13 +405,13 @@ details summary::before {
 details[open] summary::before { 
   content:"\2014\0020"; /* long dash + space unicode character */
   padding-left: 5px;
-  color: $theme-color-foreground;
+  color: $conifer;
   font-size: 1.5em;
   font-weight: bolder;
 }
 
 details[open] > summary {
-  border-bottom: 1px dashed $theme-color-foreground;
+  border-bottom: 1px dashed $conifer;
 }
 
 details > div {
