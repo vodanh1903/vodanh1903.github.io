@@ -4,7 +4,7 @@
 
 ## Intro
 This is my first CTF Writeup, hope you guys like it :).
-This CTF has only 4 challenges, one is crypto, one is pwn, one is rev and the last one is web which is also the one I will solve
+This CTF has only 4 challenges, one is crypto, one is pwn, one is rev and the last one is web which is also the one I will solve.
 
 ## Writeup
 - Web
