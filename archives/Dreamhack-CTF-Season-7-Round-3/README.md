@@ -1,5 +1,5 @@
 # Dreamhack CTF Season 7 Round #3
-![](https://github.com/vodanh1903/CTF-Writeups/blob/main/Dreamhack-CTF-Season-7-Round-3/images/banner.png)
+![](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Dreamhack-CTF-Season-7-Round-3/images/banner.png)
 - Date: 01 Feb., 00:00 UTC — 01 Feb. 2025, 15:00 UTC
 
 ## Intro
