@@ -5,7 +5,7 @@
 This is a page where you can edit markdown in real time.<br>
 Find vulnerabilities in services and exploit them to earn flags!<br>
 The flag format is DH {...} That's it.<br>
-![alt text](https://github.com/vodanh1903/CTF-Writeups/blob/main/Dreamhack-CTF-Season-7-Round-3/images/image.png)
+![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Dreamhack-CTF-Season-7-Round-3/images/image.png)
 
 - **Difficulty: Easy**
 - **This challenge has source code: [Pearfect-Markdown.zip](https://github.com/vodanh1903/CTF-Writeups/blob/main/Dreamhack-CTF-Season-7-Round-3/Web/Pearfect-Markdown/Pearfect-Markdown.zip)**
@@ -13,17 +13,17 @@ The flag format is DH {...} That's it.<br>
 ## Enumeration
 
 Index page:
-![alt text](https://github.com/vodanh1903/CTF-Writeups/blob/main/Dreamhack-CTF-Season-7-Round-3/images/image%201.png)
+![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Dreamhack-CTF-Season-7-Round-3/images/image%201.png)
 
 In here, we can upload a Markdown file.
 
 We also have a pre-made markdown file name example.md:
-![alt text](https://github.com/vodanh1903/CTF-Writeups/blob/main/Dreamhack-CTF-Season-7-Round-3/images/image%202.png)
+![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Dreamhack-CTF-Season-7-Round-3/images/image%202.png)
 
 We have a **save function to change content of this example.md file**.
 
 Look at the request path: `/edit.php?file=example.md`. I tried to exploit path traversal through `file` parameter but it seems not to work.
-![alt text](https://github.com/vodanh1903/CTF-Writeups/blob/main/Dreamhack-CTF-Season-7-Round-3/images/image%203.png)
+![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Dreamhack-CTF-Season-7-Round-3/images/image%203.png)
 
 Now we need to look through the source code.
 
@@ -82,7 +82,7 @@ if ($_FILES['file']['error'] === UPLOAD_ERR_OK) {
 ```
 
 Look into `post_handler.php` page, it has the content of `example.md` file:
-![alt text](https://github.com/vodanh1903/CTF-Writeups/blob/main/Dreamhack-CTF-Season-7-Round-3/images/image%204.png)
+![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Dreamhack-CTF-Season-7-Round-3/images/image%204.png)
 
 In `post_handler.php`, it will receive a `file` parameter and use `include()` to read `file`'s content. But it doesn't have any filters for this parameter:
 
@@ -104,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 ```
 
 So again, i tried to exploit **path traversal** through this parameter:
-![alt text](https://github.com/vodanh1903/CTF-Writeups/blob/main/Dreamhack-CTF-Season-7-Round-3/images/image%205.png)
+![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Dreamhack-CTF-Season-7-Round-3/images/image%205.png)
 
 And this time, i've succeed in reading the content of `/etc/passwd`.
 
@@ -138,15 +138,15 @@ It doesn't have any filter when we change the content of a file.
 ## Exploitation
 
 Let's start to write a basic PHP shell to execute commands through `cmd` parameter and then save it:
-![alt text](https://github.com/vodanh1903/CTF-Writeups/blob/main/Dreamhack-CTF-Season-7-Round-3/images/image%206.png)
+![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Dreamhack-CTF-Season-7-Round-3/images/image%206.png)
 
 Now, we request to the `/post_handler.php?cmd=ls` to test the `ls` command:
-![alt text](https://github.com/vodanh1903/CTF-Writeups/blob/main/Dreamhack-CTF-Season-7-Round-3/images/image%207.png)
+![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Dreamhack-CTF-Season-7-Round-3/images/image%207.png)
 
 Guess what, we've succeed to execute `ls` command!
 
 Change the value of `cmd` to `cat /*_flag` to read the flag:
-![alt text](https://github.com/vodanh1903/CTF-Writeups/blob/main/Dreamhack-CTF-Season-7-Round-3/images/image%208.png)
+![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Dreamhack-CTF-Season-7-Round-3/images/image%208.png)
 
 - **Flag: `DH{9a2a75682b662e873797cd3ccdd6b22fb166d43f2dddc6e57de9a6c0effc9307}`**
 
