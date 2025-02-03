@@ -3,11 +3,9 @@
 ## Background
 ![alt text](image-6.png)
 - Description:
-> This is a page where you can edit markdown in real time.
-
-> Find vulnerabilities in services and exploit them to earn flags!
-
-> The flag format is DH {...} That's it.
+> This is a page where you can edit markdown in real time.<br>
+> Find vulnerabilities in services and exploit them to earn flags!<br>
+> The flag format is DH {...} That's it.<br>
 - Difficulty: Easy
 
 ## Enumeration
