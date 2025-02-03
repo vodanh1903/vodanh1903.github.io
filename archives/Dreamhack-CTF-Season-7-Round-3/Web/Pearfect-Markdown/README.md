@@ -19,11 +19,11 @@ Index page:
 
 In here, we can upload a Markdown file.
 
-We also have a pre-made markdown file name example.md:
+We also have a pre-made markdown file name `example.md`:
 
 ![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Dreamhack-CTF-Season-7-Round-3/images/image%202.png)
 
-We have a **save function to change content of this example.md file**.
+We have a **save function to change content of this `example.md` file**.
 
 Look at the request path: `/edit.php?file=example.md`. I tried to exploit path traversal through `file` parameter but it seems not to work.
 
