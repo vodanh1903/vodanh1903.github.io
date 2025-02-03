@@ -1,12 +1,16 @@
-# Pearfect Markdown's Writeup
+# Pearfect Markdown
 
 ## Background
 ![alt text](image-6.png)
-- Description
+- Description:
 > This is a page where you can edit markdown in real time.
+
 > Find vulnerabilities in services and exploit them to earn flags!
+
 > The flag format is DH {...} That's it.
 - Difficulty: Easy
+
+## Enumeration
 ![alt text](image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
