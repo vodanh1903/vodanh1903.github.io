@@ -31,7 +31,7 @@ Look at the request path: `/edit.php?file=example.md`. I tried to exploit **path
 
 Now we need to look through the source code.
 
-After reading the source code, i found that we couldn't **path traversal** through `file` parameter of `edit.php` because it used the `realpath()` function:
+After reading the source code, I found that we couldn't **path traversal** through `file` parameter of `edit.php` because it used the `realpath()` function:
 
 ```php
 <?php
@@ -62,9 +62,9 @@ RUN RANDOM_STR=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32) && \
     mv /var/www/html/flag /${RANDOM_STR}_flag
 ```
 
-This time, i thought about uploading a `php` file to exploit **command injection**.
+This time, I thought about uploading a `php` file to exploit **command injection**.
 
-But when i looked through the source code of `upload.php`. I found that we can't uploading a `php` file because the code has filtered the extension of the uploaded file:
+But when I looked through the source code of `upload.php`. I found that we can't upload a `php` file because the code has filtered the extension of the uploaded file:
 
 ```php
 <?php
@@ -108,15 +108,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 ?>
 ```
 
-So again, i tried to exploit **path traversal** through this parameter:
+So again, I tried to exploit **path traversal** through this parameter:
 
 ![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Dreamhack-CTF-Season-7-Round-3/images/image%205.png)
 
-And this time, i've succeed in reading the content of `/etc/passwd`.
+And this time, I've succeed in reading the content of `/etc/passwd`.
 
-But you know what, the flag has been named to `/${RANDOM_STR}_flag`, and with `include()` function, you can't read the flag. I tried to **path traversal** so hard to read the content of the flag, i've used `/*_flag` as a regex but `include()` won't treat it as a regex so it can't read the flag. (i'm sooo dumb, lol)
+But you know what, the flag has been named to `/${RANDOM_STR}_flag`, and with `include()` function, you can't read the flag. I tried to **path traversal** so hard to read the content of the flag, I've used `/*_flag` as a regex but `include()` won't treat it as a regex so it can't read the flag. (I'm sooo dumb, lol)
 
-And then, i realized that, we have a file name `post_handler.php` **with the extension php**, and it has the content of example.md. What if we change the content of `example.md` to `php` code and then request to `post_handler.php` to execute it? But first, we need to check the `save.php`:
+And then, I realized that, we have a file name `post_handler.php` **with the extension php**, and it has the content of example.md. What if we change the content of `example.md` to `php` code and then request to `post_handler.php` to execute it? But first, we need to check the `save.php`:
 
 ```php
 <?php
