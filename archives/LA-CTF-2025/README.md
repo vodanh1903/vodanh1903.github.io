@@ -3,12 +3,12 @@
 - Date: 08 Feb., 04:00 UTC — 09 Feb. 2025, 22:00 UTC
 
 ## Background
-    First time I play CTF with a team.<br>
-    - My team: CH4S1NG_TH4T_FE3L1NG
-    - Team Solves: 13/55
-    - Individual Solves: 1/55
-    - Score: 2082
-    - Rank: 276/933 
+First time I play CTF with a team.
+- My team: CH4S1NG_TH4T_FE3L1NG
+- Team Solves: 13/55
+- Individual Solves: 1/55
+- Score: 2082
+- Rank: 276/933 
 
 ## Writeup
 - Web
