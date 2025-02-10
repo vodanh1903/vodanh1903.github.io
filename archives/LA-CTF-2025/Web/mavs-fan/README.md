@@ -45,7 +45,8 @@ The result when I send the payload:
 ![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/LA-CTF-2025/images/image-6.png)
 
 The payload works! Now, I need to look for the source code to see where and how I can read the flag.<br>
-> Reading the source code, Idk why the `script` tag can't be executed cause I see no filter apllied on our input, maybe the web page has WAF which blocks the `script` tag or am I missing something???<br>
+> Reading the source code, Idk why the `script` tag can't be executed cause I see no filter apllied on our input, maybe the web page has WAF which blocks the `script` tag or am I missing something???
+
 In `app.js`, we can see that the flag is located at the endpoint `/admin`:
 
 ```js
