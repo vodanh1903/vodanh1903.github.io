@@ -70,4 +70,4 @@ And with the first case, we got the flag!
 
 What we've learned:
 
-1. Cookie manipulation
+1. Cookie Manipulation
