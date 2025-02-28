@@ -4,7 +4,7 @@
 
 You know what's a bucketlist? In simple terms, it's just a list of wishes people want to achieve before the leavee this world. I found it to be very limiting & ironic because how can you know when you'll leave the world behind? It's better to enjoy every moment and take on every opportunity you can. One of my whishes though is to pet a cat, do you mind checking this one out. So cute.<br><br>
 
-What a cutie patootie!
+[What a cutie patootie!]()
 
 ![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/ACECTF-1.0/images/image.jpg)
 

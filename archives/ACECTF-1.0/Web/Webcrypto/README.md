@@ -7,3 +7,7 @@
 ## Exploitation
 
 ## Conclusion
+
+What we've learned:
+
+1. 
