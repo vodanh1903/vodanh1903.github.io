@@ -27,16 +27,14 @@ Nothing special, so I decides to check the source page:
 
 It has a link to the `style.css` file, I will check this file:
 
-In this `style.css` file, there is a tag named `#flag`. This `#flag` tag has a `content` sounds suspicious: ``bC5 !2CE @7 E96 u=28 :D i f9b0db4CbEd0cCb03FC`b5N``. I think the `content` has been rotated, I will use [dcode.fr](https://www.dcode.fr/rot-cipher) to rotate it:
-
 ![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/ACECTF-1.0/images/image-7.jpg)
-
-We find the 3rd part of the flag: **`7h3_53cr3t5_4r3_bur13d}`**, lol.<br>
-
-So the first and the second part are still somewhere on the web. Now, I will check if the page has the `robots.txt` file:
+In this `style.css` file, there is a tag named `#flag`. This `#flag` tag has a `content` sounds suspicious: ``bC5 !2CE @7 E96 u=28 :D i f9b0db4CbEd0cCb03FC`b5N``. I think the `content` has been rotated, I will use [dcode.fr](https://www.dcode.fr/rot-cipher) to rotate it:
 
 ![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/ACECTF-1.0/images/image-8.jpg)
 
+We find the 3rd part of the flag: **`7h3_53cr3t5_4r3_bur13d}`**, lol.<br>
+
+So the first and the second part are still somewhere on the web. Now, I will check if the page has the `robots.txt` file.<br>
 And yes! It has the `robots.txt` file with many hidden files:
 
 ![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/ACECTF-1.0/images/image-9.jpg)
