@@ -2,11 +2,11 @@
 
 ## Background
 
-At first, this web app seems straightforward, but there’s something more lurking beneath the surface. It relies on a token for user authentication, but not everything is as secure as it seems. Look closely, and you might discover that the system’s trust can be manipulated.
+At first, this web app seems straightforward, but there’s something more lurking beneath the surface. It relies on a token for user authentication, but not everything is as secure as it seems. Look closely, and you might discover that the system’s trust can be manipulated.<br>
 
-The secret is hidden within the way this token is used. Can you find the key to unlock what’s been concealed? The challenge is waiting for you to crack it.
+The secret is hidden within the way this token is used. Can you find the key to unlock what’s been concealed? The challenge is waiting for you to crack it.<br>
 
-Submit your answer in the following format: ACECTF{3x4mpl3_fl4g}
+Submit your answer in the following format: ACECTF{3x4mpl3_fl4g}<br>
 
 [http://34.131.133.224:9999/]()
 

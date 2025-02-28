@@ -16,8 +16,8 @@
 ## Writeup
 
 - Web
-    1. [Buried Deep](https://vodanh1903.github.io/archives/ACECTF-1.0/Web/Buried-Deep/) - 
-    2. [Webcrypto](https://vodanh1903.github.io/archives/ACECTF-1.0/Web/Webcrypto/) - 
-    3. [Token of Trust](https://vodanh1903.github.io/archives/ACECTF-1.0/Web/Token-of-Trust/) -
-    4. [Flag-Fetcher](https://vodanh1903.github.io/archives/ACECTF-1.0/Web/Flag-Fetcher/) -
-    5. [Bucket List](https://vodanh1903.github.io/archives/ACECTF-1.0/Web/Bucket-List/) -
+    1. [Buried Deep](https://vodanh1903.github.io/archives/ACECTF-1.0/Web/Buried-Deep/) - Reconnaissance and knowledge about some encode: ASCII, morse.
+    2. [Webcrypto](https://vodanh1903.github.io/archives/ACECTF-1.0/Web/Webcrypto/) - Type Juggling
+    3. [Token of Trust](https://vodanh1903.github.io/archives/ACECTF-1.0/Web/Token-of-Trust/) - JWT authentication bypass via payload header injection
+    4. [Flag-Fetcher](https://vodanh1903.github.io/archives/ACECTF-1.0/Web/Flag-Fetcher/) - Capture request with Burp Suite
+    5. [Bucket List](https://vodanh1903.github.io/archives/ACECTF-1.0/Web/Bucket-List/) - Reconnaissance

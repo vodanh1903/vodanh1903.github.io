@@ -2,11 +2,11 @@
 
 ## Background
 
-"I’m not a hacker. I’m just someone who wants to make the world a little better. But the world isn’t going to change itself."<br><br>
+"I’m not a hacker. I’m just someone who wants to make the world a little better. But the world isn’t going to change itself."<br>
 
-Submit your answer in the following format: ACECTF{3x4mpl3_fl4g}<br><br>
+Submit your answer in the following format: ACECTF{3x4mpl3_fl4g}<br>
 
-The flag content should be in lowercase letters only.<br><br>
+The flag content should be in lowercase letters only.<br>
 
 [http://34.131.133.224:9998/]()
 

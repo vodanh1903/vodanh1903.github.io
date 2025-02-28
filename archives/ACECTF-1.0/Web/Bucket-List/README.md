@@ -2,7 +2,7 @@
 
 ## Background
 
-You know what's a bucketlist? In simple terms, it's just a list of wishes people want to achieve before the leavee this world. I found it to be very limiting & ironic because how can you know when you'll leave the world behind? It's better to enjoy every moment and take on every opportunity you can. One of my whishes though is to pet a cat, do you mind checking this one out. So cute.<br><br>
+You know what's a bucketlist? In simple terms, it's just a list of wishes people want to achieve before the leavee this world. I found it to be very limiting & ironic because how can you know when you'll leave the world behind? It's better to enjoy every moment and take on every opportunity you can. One of my whishes though is to pet a cat, do you mind checking this one out. So cute.<br>
 
 [What a cutie patootie!]()
 
@@ -41,4 +41,4 @@ ACECTF{7h3_4w5_15_m15c0nf16ur3d}
 
 What we've learned:
 
-1. Reconnaissance
+1. Reconnaissance.
