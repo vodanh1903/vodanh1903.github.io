@@ -16,11 +16,5 @@
 ## Writeup
 
 - Web
-    1. [Grandma's Secret Recipe](https://vodanh1903.github.io/archives/BroncoCTF-2025/Web/Grandma's-Secret-Recipe/)
-    2. [Miku's Autograph](https://vodanh1903.github.io/archives/BroncoCTF-2025/Web/Miku's-Autograph/)
-
-## What I've learned
-
-- Web
     1. [Grandma's Secret Recipe](https://vodanh1903.github.io/archives/BroncoCTF-2025/Web/Grandma's-Secret-Recipe/) - Cookie Manipulation
     2. [Miku's Autograph](https://vodanh1903.github.io/archives/BroncoCTF-2025/Web/Miku's-Autograph/) - JWT authentication bypass via alg header injection

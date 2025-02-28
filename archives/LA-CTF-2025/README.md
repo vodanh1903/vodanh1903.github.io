@@ -15,9 +15,4 @@ First time I play CTF with a team.
 ## Writeup
 
 - Web
-    1. [mavs-fan](https://vodanh1903.github.io/archives/LA-CTF-2025/Web/mavs-fan/)
-
-## What I've learned
-
-- Web
     1. [mavs-fan](https://vodanh1903.github.io/archives/LA-CTF-2025/Web/mavs-fan/) - XSS
