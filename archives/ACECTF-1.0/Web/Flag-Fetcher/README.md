@@ -29,7 +29,7 @@ I have looked through the source page but nothing special. So I will use **Burp 
 
 Access the HTTP history, and we will see that before it completely loads the image, it continuously sends request to some **path** with only one character. And if we notice, we will see that if we combines all these characters, we will get the flag.
 
-> %7B and %7D are URL-encode of { and } respectively
+> %7B and %7D are URL-encode of { and } respectively<br>
 > Instead of `Burp Suite`, you can use the `Network` tab of the `Developer tools` on the browser to capture all requests 
 
 - **Flag: `ACECTF{r3d1r3ct10n}`**
