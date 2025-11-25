@@ -25,13 +25,13 @@ While exploring the website, I decided to place an order and test the checkout p
 After finishing the check, I reviewed the requests captured in my Burp Suite, but nothing particularly interesting stood out.
 
 So I decided to take a closer look at the website's token, since it seemed to be using JWT for session management.
-I use jwt.io to decode my JWT:
+I use [jwt.io](https://www.jwt.io/) to decode my JWT:
 
 ![alt text](https://raw.githubusercontent.com/vodanh1903/CTF-Writeups/refs/heads/main/Intigriti's-November-Challenge/images/image-4.png)
 
 And you can see that, our user role is stored in the `role` field.
 
-At this point, the most straightforward idea for exploiting this JWT to escalate to admin role was to change its algorithm to none. Otherwise, we could only hope that the server either does not validate the JWT signature or uses a weak secret key that we could brute‑force.
+At this point, the most straightforward idea for exploiting this JWT to escalate to admin role was to change its algorithm to `none`. Otherwise, we could only hope that the server either does not validate the JWT signature or uses a weak secret key that we could brute‑force.
 
 So, we will craft our JWT as follows:
 
@@ -127,7 +127,6 @@ Listing alls the file in current directory:
 └─$ 
 [...]
 appuser@challenge-1125-f486d7868-hflv6:/app$ ls -la
-[...]
 drwxr-xr-x 1 appuser appuser  4096 Nov 23 00:25 .aquacommerce
 [...]
 ```
